@@ -50,7 +50,7 @@ jobs:
     - name: Execute terraform scripts to launch ec2
       run: |
         terraform init
-        terraform apply --auto-approve
+        terraform destroy --auto-approve
         
     - name: Cache state files
       id: cache-state

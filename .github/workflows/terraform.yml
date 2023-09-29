@@ -47,7 +47,7 @@ jobs:
           terraform.tfstate*
         key: ${{ runner.os }}-state
         
-    - name: Execute terraform scripts to launch S3 bucket
+    - name: Execute terraform scripts to launch ec2
       run: |
         terraform init
         terraform apply --auto-approve
